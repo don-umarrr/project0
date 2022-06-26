@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Advanced Search</title>
-        <link href="index.html">
-        <link href="image.html">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        Advanced search
+        <div class="external_links">
+            <a style="margin-right: 10px" href="index.html">Google</a>
+            <a href="image.html">Image Search</a>
+        </div>
+        <div>
+            <h2 style="color: whitesmoke">Google</h2>
+        </div>
+        <div>
+            <h3 style="color: red; padding-left: 40px; padding-top: 20px;">Advanced Search</h2>
+        </div>
+        <div class="findtext">
+            <a style="color: white; padding-left: 40px;">Find pages with...</a>
+        </div>
+        <div>
+            <form action="https://google.com/search">
+                <!--I was having trouble getting the form boxes to show up like google's. I implemented
+                an unordered list and hid the bullet properties-->
+                <ul>
+                    <li>
+                        all these words: <input style="margin-left: 80px" type="text" name="as_q">
+                    </li>
+                    <li>
+                        this exact word or phrase: <input style="margin-left: 15px" type="text" name="as_epq">
+                    </li>
+                    <li>
+                        any of these words: <input style="margin-left: 55px;" type="text" name="as_oq"
+                    </li>
+                    <li>
+                        none of these words: <input style="margin-left: 46px;" type="text" name="as_eq"
+                    </li>
+                </ul>
+                <!--I tried nesting the button in a new div to make the code neater. I had trouble
+                getting the stylesheet to take effect on the button below-->
+                <div class="advanced_b">
+                    <button style="background-color: blue; margin-left: 255px; color: white;" name="tbs" type="submit" value="Advanced Search">Advanced Search</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

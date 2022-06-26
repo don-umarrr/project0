@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
-        <link href="image.html">
-        <link href="advanced.html">
+        <title>Google</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        <div class="external_links">
+            <!--Added inline styling to give links at top right some space b/w-->
+            <a style="margin-right: 10px;" href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+        <div class="main_text">
+            <span>G</span>
+            <span>o</span>
+            <span>o</span>
+            <span>g</span>
+            <span>l</span>
+            <span>e</span>
+        </div>
+        <div class="main_form">
+            <form action="https://google.com/search">
+                <input type="text" name="q" style="border-radius: 25px; width: 350px; height: 25px">
+                <div class="main_buttons">
+                    <input type="submit" value="Google Search">
+                    <input name="btnI" type="submit" value="I'm Feeling Lucky">
+                </div>
+        </div>
         </form>
     </body>
 </html>

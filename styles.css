@@ -1,0 +1,69 @@
+.external_links {
+    text-align: right;
+}
+
+.main_text {
+    font-size: 90px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    letter-spacing: -10px;
+    padding-top: 200px;
+}
+
+/* I found a cool implementation of rainbow colors for text on a single line. I found this use
+of nth child and span on: https://welearncode.com/rainbow-text/ */
+.main_text span:nth-child(10n + 1) {
+    color: blue;
+}
+.main_text span:nth-child(10n + 2) {
+    color: red;
+}
+.main_text span:nth-child(10n + 3) {
+    color: yellow;
+}
+.main_text span:nth-child(10n + 4) {
+    color: blue;
+}
+.main_text span:nth-child(10n + 5) {
+    color: green;
+}
+.main_text span:nth-child(10n + 6) {
+    color: red;
+}
+
+/* I tried rounding the corners with the border radius but was having trouble 
+getting it to be really visible without  zooming into the page. Couldn't get 
+the form box to be bigge r*/
+.main_form {
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.main_buttons {
+    padding-top: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+}
+
+a {
+    color: white;
+}
+
+/* I found a neat way to hide bullet points on lists via W3schools*/
+ul {
+    list-style-type: none;
+    color: white;
+    padding-top: 20px;
+}
+
+li {
+    padding-top: 30px;
+}
+
+.findtext {
+    padding-top: 40px;
+}
